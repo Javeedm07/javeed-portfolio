@@ -18,14 +18,17 @@ const Home = () => {
               Hello I&#39;m <br /> <span className="text-accent">Javeed</span>
             </h1>
             <p className="max-w-[500px] mb-9 mt-[20px] text-white/80">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Laboriosam, atque repellat sequi recusandae enim voluptatibus hic
-              esse, velit dolorum provident quo. blanditiis!
+              I&#39;m a passionate software developer specializing in full-stack
+              web development. With experience in MERN, Java, Python, and
+              DevOps, I love building applications that solve real-world
+              problems. I am always learning and ready to tackle new challenges.
             </p>
             {/*---btn and socials---*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href="./public/assets/Javeed_SDE.pdf" download>
-                {/* C:\portfolio\public\assets\Javeed_SDE.pdf */}
+              <a
+                href="https://drive.google.com/file/d/14KzsxG6MesTxRL3GujEJLUmshyXTx36G/view?usp=sharing"
+                target="_blank"
+              >
                 <Button
                   variant="outline"
                   size="lg"

@@ -5,42 +5,49 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
   FaNodeJs,
+  FaPython,
 } from "react-icons/fa";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMongodb,
+  SiExpress,
+} from "react-icons/si";
 
 //about data
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, mollitia. Quam, unde! Alias at ipsam libero porro, ex error tempore!",
+    "Highly motivated and experienced individual with a strong passion for technology, seeking to leverage my skills and expertise to drive innovation and growth.",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Javeed Mahammad",
     },
     {
+      fieldName: "Email",
+      fieldValue: "durgijaveed07@gmail.com",
+    },
+    {
+      fieldName: "DOB",
+      fieldValue: "7 Dec, 2003",
+    },
+
+    {
       fieldName: "Phone",
-      fieldValue: "+91 ",
+      fieldValue: "(+91) 9391531765",
     },
     {
       fieldName: "Experience",
-      fieldValue: "12+ years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "javeed.01",
+      fieldValue: "Fresher",
     },
     {
       fieldName: "Nationality",
       fieldValue: "Indian",
     },
-    {
-      fieldName: "Email",
-      fieldValue: "durgijaveed07@gmail.com",
-    },
+
     {
       fieldName: "Freelance",
       fieldValue: "Available",
@@ -57,7 +64,7 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptatum.",
+    "I've gained hands-on experience through internships, working on real-world projects and developing my technical skills. These opportunities allowed me to contribute to impactful solutions while learning and growing in tech.",
   items: [
     {
       company: "Indian Servers",
@@ -77,21 +84,24 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptatum.",
+    "Pursuing academic excellence, with a focus on Computer Science, from SSC to Undergraduate level.",
   items: [
     {
       institution: "JNTU kakinada",
       degree: "Bachelor's in Computer Science",
+      grade: "8.75",
       duration: "2021 - present",
     },
     {
       institution: "Narayana Jr. college",
       degree: "Intermediate",
+      grade: "96.8%",
       duration: "2019 - 2021",
     },
     {
       institution: "Adarsh High School",
       degree: "SSC",
+      grade: "10.0",
       duration: "2018 - 2019",
     },
   ],
@@ -101,7 +111,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, architecto?",
+    "Proficient in a range of technologies, including front-end development and back-end development.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -128,12 +138,54 @@ const skills = {
       name: "tailwind.css",
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <FaPython />,
+      name: "Python",
     },
     {
       icon: <FaNodeJs />,
       name: "Node js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express js",
+    },
+    {
+      icon: <SiMongodb />,
+      name: "Mongo DB",
+    },
+  ],
+};
+
+//certifications data
+const certifications = {
+  title: "My certifications",
+  description:
+    "Throughout my learning journey, I’ve earned certifications from top organizations, showcasing my expertise in various fields.",
+  info: [
+    {
+      fieldName: "Google Data Analytics",
+      fieldValue: "Google",
+    },
+    {
+      fieldName: "Java Script Essentials",
+      fieldValue: "Cisco",
+    },
+    {
+      fieldName: "Python Essentials",
+      fieldValue: "Cisco",
+    },
+
+    {
+      fieldName: "Cyber Security",
+      fieldValue: "Cisco",
+    },
+    {
+      fieldName: "Python Basics",
+      fieldValue: "HackerRank",
+    },
+    {
+      fieldName: "Problem Solving Basic",
+      fieldValue: "HackerRank",
     },
   ],
 };
@@ -170,6 +222,7 @@ const Resume = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
             <TabsTrigger value="about">About me</TabsTrigger>
+            <TabsTrigger value="certifications">Certifications</TabsTrigger>
           </TabsList>
 
           {/*content*/}
@@ -190,7 +243,7 @@ const Resume = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 "
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
+                          <h3 className="text-xl max-w-[260px] text-center lg:text-left ">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -222,8 +275,11 @@ const Resume = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 "
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
+                          <h3 className="text-xl max-w-[260px] text-center lg:text-left ">
                             {item.degree}
+                          </h3>
+                          <h3 className="text-l max-w-[260px] text-center lg:text-left">
+                            Score: {item.grade}
                           </h3>
                           <div className="flex items-center gap-3">
                             {/*---dot---*/}
@@ -293,6 +349,33 @@ const Resume = () => {
                     );
                   })}
                 </ul>
+              </div>
+            </TabsContent>
+
+            {/*---certifications---*/}
+            <TabsContent value="certifications" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left ">
+                <h3 className="text-4xl font-bold">{certifications.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {certifications.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                    {certifications.info.map((item, index) => {
+                      return (
+                        <li
+                          key={index}
+                          className="flex items-center justify-center gap-4 xl:grid xl:grid-cols-1 xl:gap-0"
+                        >
+                          <span className="text-xl">{item.fieldName}</span>
+                          <span className="text-white/60">
+                            By {item.fieldValue}
+                          </span>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
               </div>
             </TabsContent>
           </div>
