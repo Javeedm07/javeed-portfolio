@@ -6,23 +6,30 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "Web Development",
+    title: "Web Application Development",
     description:
-      "I specialize in building responsive and dynamic websites using modern web technologies like React, Node.js, and MongoDB. From single-page applications to full-stack solutions, I deliver robust web experiences tailored to client needs.",
+      "Design and develop responsive, interactive, and scalable web applications using modern technologies such as React, Vue.js, and Angular. Custom solutions tailored to meet specific business needs.",
     href: "./contact",
   },
   {
     num: "02",
-    title: "App Development",
+    title: "Backend Development",
     description:
-      "I create mobile applications that offer seamless user experiences on Android platforms. My expertise includes using frameworks like React Native to develop scalable, efficient, and user-friendly mobile apps.",
+      "Build robust server-side logic, APIs, and integrations using Node.js, Express, and other frameworks. Ensure secure user authentication, data management, and high-performance systems.",
     href: "./contact",
   },
   {
     num: "03",
-    title: "UI/UX Design",
+    title: "Frontend Development",
     description:
-      "Designing intuitive and aesthetically pleasing user interfaces is my passion. I focus on user-centric design principles to create interfaces that are not only visually appealing but also enhance user experience and accessibility.",
+      "Create user-friendly and visually appealing interfaces with modern JavaScript frameworks like React, along with responsive designs using HTML, CSS, and Tailwind. Ensure cross-browser compatibility and smooth user experiences.",
+    href: "./contact",
+  },
+  {
+    num: "04",
+    title: "Database Management",
+    description:
+      "Design and optimize database schemas for efficient data storage and retrieval. Manage both SQL (MySQL, PostgreSQL) and NoSQL (MongoDB) databases, ensuring data integrity and security.",
     href: "./contact",
   },
 ];
