@@ -20,14 +20,14 @@ module.exports = {
     fontFamily: {
       primary: ["JetBrains Mono", "monospace"], // add your primary font here
     },
-    extend: {
-      colors: {
-        primary: "#1b1b1b",
-        accent: {
-          DEFAULT: "#2196f3",
-          hover: "#1a237e",
-        },
-      },
+    // extend: {
+    //   colors: {
+    //     primary: "#1b1b1b",
+    //     accent: {
+    //       DEFAULT: "#2196f3",
+    //       hover: "#1a237e",
+    //     },
+    //   },
 
       // colors: {
       //   primary: "#0a0a0a",
@@ -37,13 +37,13 @@ module.exports = {
       //   },
       // },
 
-      // colors: {
-      //   primary: "#1a1f36",
-      //   accent: {
-      //     DEFAULT: "#ff6b35",
-      //     hover: "#e65a2b",
-      //   },
-      // },
+      colors: {
+        primary: "#1c1c22",
+        accent: {
+          DEFAULT: "#ff6b35",
+          hover: "#e65a2b",
+        },
+      },
 
       // colors: {
       //   primary: "#1c1c22",
