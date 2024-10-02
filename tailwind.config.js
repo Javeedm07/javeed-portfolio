@@ -20,7 +20,7 @@ module.exports = {
     fontFamily: {
       primary: ["JetBrains Mono", "monospace"], // add your primary font here
     },
-    // extend: {
+    extend: {
     //   colors: {
     //     primary: "#1b1b1b",
     //     accent: {
